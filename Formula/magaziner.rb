@@ -1,20 +1,20 @@
 class Magaziner < Formula
   desc "CLI tool that downloads LRB and Harper's Magazine issues and generates EPUB files for e-readers"
   homepage "https://github.com/colbsmcdolbs/magaziner"
-  version "0.1.1"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/colbsmcdolbs/magaziner/releases/download/v0.1.1/magaziner-aarch64-apple-darwin.tar.xz"
-      sha256 "4fd9c43d8e285db1d91520c2327152a12a51e0f7bd6deba63e7f359c40966229"
+      url "https://github.com/colbsmcdolbs/magaziner/releases/download/v0.1.3/magaziner-aarch64-apple-darwin.tar.xz"
+      sha256 "27c34b327eb0d5548559173c9dfe7f20091a74cd199c1e5ece610c72f7f73970"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/colbsmcdolbs/magaziner/releases/download/v0.1.1/magaziner-x86_64-apple-darwin.tar.xz"
-      sha256 "81dad3674452dfd14661dab74e63a8942bd1be3e6bce7be8b2ef8a2f3a82853e"
+      url "https://github.com/colbsmcdolbs/magaziner/releases/download/v0.1.3/magaziner-x86_64-apple-darwin.tar.xz"
+      sha256 "590f3698e5c05ce3cb6bf93f902ec15e997a0338e278bcb442274a748515370a"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/colbsmcdolbs/magaziner/releases/download/v0.1.1/magaziner-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7f7479b2d359e6e0d00a2dbe1b8e022a8155ca6e6957247f2722815857a962bc"
+      url "https://github.com/colbsmcdolbs/magaziner/releases/download/v0.1.3/magaziner-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e175a75bb657755214b847d87101cd7a012a5243ba02c9d73e85c977fea74ad8"
   end
   license "MIT"
 
